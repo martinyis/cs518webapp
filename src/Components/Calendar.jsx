@@ -13,7 +13,9 @@ const Calendar = ({ getevents }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("/api/readrecords");
+        const response = await axios.get(
+          "https://groupa-project.azurewebsites.net/api/readrecords"
+        );
 
         // Convert single quotes to double quotes
         let data = response.data.replace(/'/g, '"');

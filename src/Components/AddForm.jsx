@@ -45,7 +45,7 @@ const AddForm = ({ onSubmitSuccess }) => {
     };
 
     axios
-      .post("/api/createrecord", data)
+      .post("https://groupa-project.azurewebsites.net/api/createrecord", data)
       .then((res) => {
         console.log(res);
         console.log(res.data);

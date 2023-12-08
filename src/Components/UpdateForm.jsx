@@ -37,7 +37,7 @@ const UpdateForm = ({ onSubmitSuccess, events }) => {
       new_values: filteredNewValues,
     };
     axios
-      .put("/api/updaterecord", data)
+      .put("https://groupa-project.azurewebsites.net/api/updaterecord", data)
       .then((res) => {
         console.log(res);
         console.log(res.data);
