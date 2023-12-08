@@ -14,7 +14,9 @@ const Calendar = ({ getevents }) => {
     const fetchData = async () => {
       try {
         // Update the axios request URL to point to your proxy server
-        const response = await axios.get("/api/readrecords");
+        const response = await axios.get(
+          "https://groupa-project.azurewebsites.net/api/readrecords"
+        );
 
         // Convert single quotes to double quotes
         let data = response.data.replace(/'/g, '"');
