@@ -79,14 +79,6 @@ const Calendar = ({ getevents }) => {
     fetchData();
   }, []);
 
-  useEffect(() => {
-    // load event data
-    calendarRef.current.control.update({
-      startDate: "2023-10-02",
-      events: [],
-    });
-  }, []);
-
   const handleMouseEnter = () => {
     document.body.style.pointerEvents = "none";
   };
