@@ -55,7 +55,7 @@ const AddForm = ({ onSubmitSuccess }) => {
         console.error("Error submitting form:", error);
       })
       .finally(() => {
-        // window.location.reload();
+        window.location.reload();
       });
   };
   const generateDayOptions = () => {
