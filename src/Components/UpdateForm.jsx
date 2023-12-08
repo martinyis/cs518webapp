@@ -37,7 +37,7 @@ const UpdateForm = ({ onSubmitSuccess, events }) => {
       new_values: filteredNewValues,
     };
     axios
-      .put("https://groupa-project.azurewebsites.net/api/updaterecord", data)
+      .put("/api/updaterecord", data)
       .then((res) => {
         console.log(res);
         console.log(res.data);
@@ -46,7 +46,9 @@ const UpdateForm = ({ onSubmitSuccess, events }) => {
       .catch((error) => {
         console.error("Error submitting form:", error);
       })
-      .finally(() => {});
+      .finally(() => {
+        window.location.reload();
+      });
   };
   const generateDayOptions = () => {
     const today = new Date();

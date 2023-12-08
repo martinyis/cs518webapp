@@ -45,7 +45,7 @@ const AddForm = ({ onSubmitSuccess }) => {
     };
 
     axios
-      .post("https://groupa-project.azurewebsites.net/api/createrecord", data)
+      .post("/api/createrecord", data)
       .then((res) => {
         console.log(res);
         console.log(res.data);
@@ -55,7 +55,6 @@ const AddForm = ({ onSubmitSuccess }) => {
         console.error("Error submitting form:", error);
       })
       .finally(() => {
-        //reload the page
         window.location.reload();
       });
   };

@@ -2,6 +2,7 @@
   "name": "webapp",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://groupa-project.azurewebsites.net/",
   "dependencies": {
     "@daypilot/daypilot-lite-react": "^3.18.0",
     "@testing-library/jest-dom": "^5.17.0",
